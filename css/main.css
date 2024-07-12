@@ -4258,14 +4258,14 @@ em.state-invalid {
 }
 
 .btn.btn-black {
-	background: #000;
-	border: .1429rem solid #000;
-	color: #fff;
+	background: #ffffff;
+	border: .1429rem solid #ff0000;
+	color: #ff0000;
 }
 
 .btn.btn-black:hover {
-	background: none;
-	color: #000;
+	background: rgb(247, 49, 49);
+	color: #ffffff;
 }
 
 .btn:focus {
@@ -4362,13 +4362,22 @@ em.state-invalid {
 	color: #fff;
 	border: .1429rem solid transparent;
 }
+.btn.btn-solid-instagram {
+	background: #3b5998;
+	color: #fff;
+	border: .1429rem solid transparent;
+}
 
 .btn.btn-solid-facebook:hover {
 	color: #3b5998;
 	border-color: #3b5998;
 	background: none;
 }
-
+.btn.btn-solid-instagram:hover {
+	color: #3b5998;
+	border-color: #3b5998;
+	background: none;
+}
 .btn.btn-solid-google {
 	background: #dd4b39;
 	color: #fff;
@@ -4546,8 +4555,17 @@ em.state-invalid {
 	color: #fff;
 	border: .1429rem solid transparent;
 }
-
+.btn-alternate.btn.btn-solid-instagram {
+	background: #3b5998;
+	color: #fff;
+	border: .1429rem solid transparent;
+}
 .btn-alternate.btn.btn-solid-facebook:hover {
+	color: #3b5998;
+	border-color: #3b5998;
+	background: none;
+}
+.btn-alternate.btn.btn-solid-instagram:hover {
 	color: #3b5998;
 	border-color: #3b5998;
 	background: none;
@@ -5301,11 +5319,11 @@ pre {
 }
 
 .ico-box:hover .icon,.ico-box:hover .content-title {
-	color: #5645ff;
+	color: #fb4f4f;
 }
 
 .ico-box:hover .icon a,.ico-box:hover .content-title a {
-	color: #5645ff;
+	color: #fb4f4f;
 }
 
 .ico-box.dark-hover:hover .icon,.ico-box.dark-hover:hover .content-title {
@@ -5591,7 +5609,11 @@ pre {
 }
 
 .about-banner {
-	background-image: url('../img/visual-small-01.jpg');
+	background-image: url('../img/website\ -about\ 1st\ page\ -\ \(1920\ ×\ 850\ pixels\).png');
+}
+
+.about-banners{
+	background-image: url('../img/website\ -blog\ page-image\ \(1920\ ×\ 850\ pixels\).png');
 }
 
 .portfolio-banner {
@@ -6217,7 +6239,7 @@ pre {
 	transition-delay: .4s;
 }
 
-.grayscale-effect img,.logo-container .owl-carousel .owl-item img {
+/* .grayscale-effect img,.logo-container .owl-carousel .owl-item img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: -webkit-filter linear .3s;
@@ -6225,7 +6247,7 @@ pre {
 	-o-transition: filter linear .3s;
 	transition: filter linear .3s;
 	transition: filter linear .3s, -webkit-filter linear .3s;
-}
+} */
 
 .grayscale-effect:hover img,.logo-container .owl-carousel .owl-item:hover img {
 	-webkit-filter: grayscale(0);
@@ -6786,6 +6808,9 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {
 	color: #3b5998;
 }
 
+.social-network a:hover .icon-instagram {
+	color: #3b5998;
+}
 .social-network a:hover .icon-twitter {
 	color: #1da1f2;
 }
@@ -6794,7 +6819,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {
 	color: #dd4b39;
 }
 
-.social-network a:hover .icon-pinterest {
+.social-network a:hover .icon-instagram {
 	color: #bd081c;
 }
 
@@ -7610,7 +7635,6 @@ a.full-width-icon:hover .social-text {
 /******* accordion styles *******/
 
 .accordion-container {
-	max-width: 35.63rem;
 	margin: 0 auto;
 }
 

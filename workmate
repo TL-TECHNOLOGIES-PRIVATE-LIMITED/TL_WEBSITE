@@ -1,0 +1,180 @@
+ 
+                <div class="content-wrapper">
+                  <section class="content-block">
+                      <div class="container">
+                          <h2 class="text-center">Providing Information To Visitors In Clear, Concise, And Organized Way</h2>
+                          <h4 class="text-center" style="color: rgb(221, 106, 106);">
+                              Our FAQ session will give our potential customer all the information they need in one place. The purpose of our FAQ is to provide a great user-experience.
+                          </h4>
+                          <div class="row">
+                              <!-- Left Column -->
+                              <div class="col-md-6">
+                                  <div id="accordion-left" class="panel-icon" role="tablist" aria-multiselectable="true">
+                                      <!-- FAQ Item 1 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading1">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion-left" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                      How Do We Help Your Business Flourish?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+                                              <div class="card-block">
+                                                  <p>TL Technologies is a leading web development, digital marketing, and IT services company. We have been helping many companies grow their businesses. We provide services such as eCommerce/ payment gateway, mobile or website development, content writing, graphic designing, server management, ERP services, and digital marketing.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- FAQ Item 2 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading2">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                      Do you collect any data from customers?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                                              <div class="card-block">
+                                                  <p>Yes, we do collect a few personal details from our customers. We need to collect your details in order to provide you with our services. The personal information we collect may include your name, country, state, address, pin code, phone number, and email address. We also use personal data for operational purposes such as billing and accounting, fraud prevention and credit worthiness assessments. We will never sell or rent your personal information to any third party for marketing purposes without your consent.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- FAQ Item 3 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading3">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                      Do I need a graphic design from your organization?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                                              <div class="card-block">
+                                                  <p>Graphic design is one of the most important aspects of any business. It's what separates you from your competition, and can help you stand out in an increasingly crowded marketplace. But graphic design isn't just about pretty pictures and cool fonts—it's also about creating an effective marketing strategy that helps you reach your target audience. We understand that your image is important to the success of your business. That's why we take the time to get to know you and your business; so that we can create a design that reflects who you are and what you do. We will help you create a brand identity that reflects who you are and what you do.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- FAQ Item 4 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading4">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                      How often should I update my website?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                                              <div class="card-block">
+                                                  <p>The answer to this question depends on your business, but in general, you should be updating your website at least once per month. If you have an eCommerce site, then this number might be a bit higher because you'll want to make sure that all of the products are up to date and that there aren't any errors with the inventory or shipping. Another reason why it's important to update your website often is that Google likes websites that are updated often.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- FAQ Item 5 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading5">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                      How can TL Technologies help your organization achieve its goals?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+                                              <div class="card-block">
+                                                  <p>TL Technologies is an innovative IT solutions provider delivering comprehensive Information Technology services and products that help customers meet their technology goals today and tomorrow. We offer a full range of end-to-end services including designing, implementing, managing, and maintaining Information Systems, infrastructure, and devices across the globe.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Right Column -->
+                              <div class="col-md-6">
+                                  <div id="accordion2" class="panel-icon" role="tablist" aria-multiselectable="true">
+                                      <!-- FAQ Item 6 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading6">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                      Do you offer blog or website content writing services?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+                                              <div class="card-block">
+                                                  <p>Yes, we offer blog and website content-writing services. We can write articles for your website or blog from scratch or you can provide us with the topics that you want us to write about. All our writers follow a strict quality control process to ensure that they only deliver original and plagiarism-free work. We have a team of editors who check each article for errors and typos before it is delivered to the client. We offer blog writing services in the following categories: health, beauty, fashion, travel, finance, technology, and other categories as per your requirement. The content you get from us will be keyword optimized, 100% original, and written by professional writers.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- FAQ Item 7 -->
+                                      <div class="card">
+                                          <div class="card-header" role="tab" id="heading7">
+                                              <h5 class="mb-0">
+                                                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                      Can you help me with email marketing?
+                                                  </a>
+                                              </h5>
+                                          </div>
+                                          <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+                                              <div class="card-block">
+                                                  <p>If you are looking to get the most out of your email marketing, then TL Technologies is the right choice. We offer a wide range of services in this domain and will be happy to help you out with any of them. We offer email marketing service that helps you in getting more subscribers and customers. Our email marketing service includes:
+                                                      <ul>
+                                                          <li>Designing engaging email campaigns</li>
+                                                          <li>Writing compelling subject lines and copy</li>
+                                                          <li>Optimizing images and links to drive clicks</li>
+                                                          <li>Creating landing pages and other content that complements your emails</li>
+                                                      </ul>
+                                                    </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- FAQ Item 8 -->
+                                          <div class="card">
+                                              <div class="card-header" role="tab" id="heading8">
+                                                  <h5 class="mb-0">
+                                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                                          What are your payment gateway options?
+                                                      </a>
+                                                  </h5>
+                                              </div>
+                                              <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8">
+                                                  <div class="card-block">
+                                                      <p>We provide various payment gateway options to our customers including PayPal, Stripe, Authorize.Net, and others. These options allow you to securely accept payments online, making it convenient for your customers to pay for your products or services.</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- FAQ Item 9 -->
+                                          <div class="card">
+                                              <div class="card-header" role="tab" id="heading9">
+                                                  <h5 class="mb-0">
+                                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                                          How can I contact your support team?
+                                                      </a>
+                                                  </h5>
+                                              </div>
+                                              <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+                                                  <div class="card-block">
+                                                      <p>You can contact our support team through email at support@tltechnologies.com or by phone at +1234567890. Our support team is available 24/7 to assist you with any queries or issues you may have.</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                         
+                                            <div class="card">
+                                              <div class="card-header" role="tab" id="heading10">
+                                                  <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse10" aria-expanded="false" aria-controls="collapse10">How will your server/database management solution help my organization?
+                                                  </a></h5>
+                                              </div>
+                                              <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10">
+                                                  <div class="card-block">
+                                                <p>TL Technologies is an innovative IT solutions provider delivering comprehensive Information Technology services and products that help customers meet their technology goals today and tomorrow. We offer a full range of end-to-end services including designing, implementing, managing, and maintaining Information Systems, infrastructure, and devices across the globe.</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+                  
+                                             
