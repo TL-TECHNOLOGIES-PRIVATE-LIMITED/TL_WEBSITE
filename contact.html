@@ -76,6 +76,8 @@
     />
     <!-- Theme CSS -->
     <link media="all" rel="stylesheet" href="css/main.css" />
+    <!-- chat bot css -->
+    <link media="all" rel="stylesheet" href="css/chatbot.css" />
     <!-- Custom CSS -->
     <link media="all" rel="stylesheet" href="css/custom.css" />
   </head>
@@ -85,6 +87,93 @@
     <div id="wrapper">
       <div class="page-wrapper">
         <!-- header of the page -->
+
+        <!-- chat bot  start -->
+        <div
+        style="
+          position: fixed;
+          bottom: 50px;
+          right: 50px;
+          width: fit-content;
+          z-index: 1000;
+        "
+      >
+        <button id="chatbot-button" style="font-size: larger;">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <span>Lets talk</span>
+        </button>
+      </div>
+
+      <div id="chatbotModal" class="chatbot-modal">
+        <div class="chatbot-modal-content">
+ 
+            <div class="bot-header">
+              <img src="/img/logo.png" class="bot-icon" alt="" />
+              <p class="fs-5 fs-md-4 fs-lg-3 text-black">Welcome to our chat service. How can we help you?</p>
+              <span class="close" id="icon-angle-left"></span>
+            </div>
+            <div class="chat-container">
+              <button class="basic-button" onclick="showFAQ()">
+                Frequently asked questions
+              </button>
+              <div id="faqList" class="faq-list"></div>
+
+              <!-- <h1>Ask a Question</h1> -->
+              <div class="input-field">
+                <input
+                  type="text"
+                  id="questionInput"
+                  placeholder="please type your  question"
+                />
+                <!-- <button onclick="displayAnswer()" id="chatbot-button">Get Answer</button> -->
+                <button onclick="displayAnswer()" id="chatbot-button">
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>send</span>
+                </button>
+              </div>
+              <div class="loader-container" id="loader">
+                <div class="bouncing-dots">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+              <p id="answerOutput" class="text-black fs-3 fs-md-2 fs-lg-1"></p>
+            </div>
+            <!-- Chat bot interface will go here -->
+          </div>
+      </div>
+         <!-- chat bot end -->
         <header
           class="fixed-top main-header header-white transparent"
           id="waituk-main-header"
@@ -627,6 +716,14 @@
     <script
       type="text/javascript"
       src="vendors/rev-slider/revolution-addons/snow/revolution.addon.snow.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/chabot.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/qustion.js"
     ></script>
     <!-- revolutions slider script -->
     <script src="js/revolution.js"></script>
