@@ -3539,7 +3539,12 @@ em.state-invalid {
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-
+.border-effect {
+	border: 1px solid #5f5f5f96; /* Adjust the border color and thickness as needed */
+	padding: 15px; /* Optional: Add padding for better visual separation */
+	border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  }
+  
 .main-header #top-search {
 	position: absolute;
 	left: 0;
