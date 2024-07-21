@@ -43,7 +43,7 @@ function getBestAnswer(userInput) {
   let highestScore = 0;
 
   for (const q of questions) {
-    const questionTokens = tokenize(q.question);
+    const questionTokens = tokenize(q.answer);
     const score = calculateSimilarityScore(inputTokens, questionTokens);
     if (score > highestScore) {
       highestScore = score;
@@ -54,7 +54,7 @@ function getBestAnswer(userInput) {
   if (bestMatch) {
     return bestMatch.answer;
   } else {
-    return "Sorry, I couldn't find an answer to your question.";
+    return "Sorry, I couldn't find an answer to your question."
   }
 }
 
@@ -105,8 +105,8 @@ function displayAnswer(token) {
   function highlightKeywords() {
   let text = answerOutput.innerHTML;
   keywords.forEach(keyword => {
-      const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-      text = text.replace(regex, `<span style="color: red;">${keyword}</span>`) 
+    const regex = new RegExp(`\\b${keyword}\\b`, 'gi'); 
+    text = text.replace(regex, <span style="color: red;">${keyword}</span>) 
 
   });
     const phoneRegex = /(\b\d{10}\b)/g;
@@ -134,7 +134,7 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.classList.remove("show");
     showFAQ()
-    
-  }
-  
+    
+  }
+  
 };
