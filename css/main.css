@@ -7881,7 +7881,7 @@ a.full-width-icon:hover .social-text {
 }
 
 .pricing-box-v1 {
-	border: #e3e5e8 1px solid;
+	border: #000333 1px solid;
 	margin-top: 3.125rem;
 	-webkit-transition: all linear .2s;
 	-o-transition: all linear .2s;
@@ -7933,7 +7933,7 @@ a.full-width-icon:hover .social-text {
 	margin: -4.375rem auto 2.188rem;
 	line-height: 9.063rem;
 	border-radius: 50%;
-	border: #e3e5e8 1px solid;
+	border: #e3e5e8 2px solid;
 }
 
 .pricing-box-v1.pricing-box-v2 .divider-double-border {

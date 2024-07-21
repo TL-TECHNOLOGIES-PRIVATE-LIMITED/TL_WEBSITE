@@ -205,6 +205,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2000;
       }
 
       .cookie-consent p {
@@ -566,7 +567,9 @@
   <body class="white-overlay">
     <div class="preloader" id="pageLoad">
       <div class="holder">
-        <div class="coffee_cup"></div>
+        <div>
+          <img src="./img/logo.svg" alt="tl-logo">
+        </div>
       </div>
     </div>
     <!--Google analytics Ends-->
@@ -691,20 +694,11 @@
         <!--/header of the page -->
         <main>
           <div class="cookie-consent" id="cookieConsent">
-            <img
-              style="height: 80px; width: 80px"
-              src="img/logo.svg"
-              alt="tltechnologies"
-            />
-            <p>
-              We use cookies to enhance your experience on our website. By
-              continuing to use our site, you agree to our use of cookies.
-            </p>
+            <img style="height: 80px; width: 80px" src="img/logo.svg" alt="tltechnologies" />
+            <p>We use cookies to enhance your experience on our website. By continuing to use our site, you agree to our use of cookies.</p>
             <div>
               <button onclick="acceptCookies()">Accept</button>
-              <button class="decline" onclick="declineCookies()">
-                Decline
-              </button>
+              <button class="decline" onclick="declineCookies()">Decline</button>
             </div>
           </div>
           <!-- visual/banner of the page -->
@@ -892,6 +886,7 @@
                       data-paddingright="[25,25,25,25]"
                       data-paddingleft="[25,25,25,25]"
                     ></div>
+                   
                     <div
                       class="slider-main-title text-white tp-caption tp-resizeme rs-parallaxlevel-1"
                       data-x="['left','left','left','left']"
@@ -918,19 +913,19 @@
                       data-paddingright="[25,25,25,25]"
                       data-paddingleft="[25,25,25,25]"
                     >
-                      Make Your Dreams Come Digital
+                      
                     </div>
                     <div
-                      class="slider-text text-white tp-caption tp-resizeme rs-parallaxlevel-2"
+                      class="slider-main-title text-white tp-caption tp-resizeme rs-parallaxlevel-2"
                       data-x="['left','left','left','left']"
                       data-hoffset="['0','0','0','0']"
                       data-y="['top','top','middle','middle']"
-                      data-voffset="['450','230','110','110']"
-                      data-width="['600','555','555','480']"
+                      data-voffset="['350','150','50','50']"
+                      data-width="['1200','960','720','540']"
                       data-textalign="left"
-                      data-fontsize="['16','14','14','14']"
-                      data-lineheight="['30','30','22','22']"
-                      data-fontweight="400"
+                      data-fontsize="['60','8','64','48']"
+                      data-lineheight="['100','100','72','60']"
+                      data-fontweight="900"
                       data-height="none"
                       data-whitespace="normal"
                       data-transform_idle="o:1;"
@@ -944,7 +939,7 @@
                       data-responsive_offset="on"
                       data-paddingright="[25,25,25,25]"
                       data-paddingleft="[25,25,25,25]"
-                    ></div>
+                    >Make Your Dreams Come Digital</div>
                     <!-- <div
                       class="tp-caption rev-btn rs-parallaxlevel-10"
                       id="slide-163-layer-1"
@@ -1908,31 +1903,49 @@
     <script src="js/jquery.main.js"></script>
     <!-- Cookies function -->
     <script>
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        console.log("Set cookie:", document.cookie);
+      }
+  
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+  
       function acceptCookies() {
         document.getElementById("cookieConsent").style.display = "none";
-        // Set a cookie to remember user's choice
-        document.cookie =
-          "cookieConsent=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+        setCookie("cookieConsent", "true", 365);
       }
-
+  
       function declineCookies() {
         document.getElementById("cookieConsent").style.display = "none";
-        // Set a cookie to remember user's choice
-        document.cookie =
-          "cookieConsent=false; path=/; max-age=" + 60 * 60 * 24 * 365;
+        setCookie("cookieConsent", "false", 365);
       }
-
-      // Check if the cookieConsent cookie is set
+  
       window.onload = function () {
-        if (
-          document.cookie.indexOf("cookieConsent=true") !== -1 ||
-          document.cookie.indexOf("cookieConsent=false") !== -1
-        ) {
+        console.log("Page loaded. Current cookies:", document.cookie);
+        if (getCookie("cookieConsent")) {
           document.getElementById("cookieConsent").style.display = "none";
+          console.log("Cookie consent found:", getCookie("cookieConsent"));
+        } else {
+          document.getElementById("cookieConsent").style.display = "flex";
+          console.log("Cookie consent not found");
         }
       };
     </script>
-
     <!-- REVOLUTION JS FILES -->
     <script
       type="text/javascript"
