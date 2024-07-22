@@ -43,7 +43,7 @@ function getBestAnswer(userInput) {
   let highestScore = 0;
 
   for (const q of questions) {
-    const questionTokens = tokenize(q.answer);
+    const questionTokens = tokenize(q.answer && q.question);
     const score = calculateSimilarityScore(inputTokens, questionTokens);
     if (score > highestScore) {
       highestScore = score;
@@ -54,7 +54,7 @@ function getBestAnswer(userInput) {
   if (bestMatch) {
     return bestMatch.answer;
   } else {
-    return "Sorry, I couldn't find an answer to your question."
+    return "Sorry, I couldn't find an answer to your question.";
   }
 }
 
@@ -105,8 +105,9 @@ function displayAnswer(token) {
   function highlightKeywords() {
   let text = answerOutput.innerHTML;
   keywords.forEach(keyword => {
-    const regex = new RegExp(`\\b${keyword}\\b`, 'gi'); 
-    text = text.replace(regex, <span style="color: red;">${keyword}</span>) 
+      const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+      text = text.replace(regex, `<span style="color: red; font-weight: bold;">${keyword}</span>`);
+
 
   });
     const phoneRegex = /(\b\d{10}\b)/g;
@@ -124,7 +125,12 @@ function displayAnswer(token) {
     answerOutput.style.padding = "10px"
 
     // Display the answer
-    answerOutput.innerText = answer;
+    answerOutput.innerHTML = `
+    <span style="font-size: 20px;  font-weight:bold">"</span>${answer}<span style="font-size: 20px;">"</span>
+    <br/>
+    <a href="https://api.whatsapp.com/send/?phone=919061432814" target="_blank">
+    <p style="color: blue; text-decoration: underline; font-weight:bold">for more details </p></a>`;
+  
     highlightKeywords();
 
   }, 1000); // Simulated delay (1 second)
@@ -134,7 +140,7 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.classList.remove("show");
     showFAQ()
-    
-  }
-  
+    
+  }
+  
 };

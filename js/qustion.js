@@ -91,7 +91,7 @@ const keywords = [
     "Appointment Management",
     "TL Being Digital",
     "Everyhome",
-    "Server Monitoring",
+    "Server Monitoring System",
     "Branding",
     "Video Editing",
     "SEO",
