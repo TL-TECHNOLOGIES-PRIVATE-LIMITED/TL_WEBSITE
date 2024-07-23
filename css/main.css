@@ -802,7 +802,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: none;
-	font-family: 'Merriweather' !important; 
+	font-family: "Montserrat", sans-serif !important; 
 }
 
 img {
@@ -5585,11 +5585,11 @@ pre {
 }
 
 .about-banner {
-	background-image: url('../img/website\ -about\ 1st\ page\ -\ \(1920\ ×\ 850\ pixels\).png');
+	background-image: url('../img/website-about1st\ .png');
 }
 
 .about-banners{
-	background-image: url('../img/website\ -blog\ page-image\ \(1920\ ×\ 850\ pixels\).png');
+	background-image: url('../img/website\ -blog-page-image.png');
 }
 
 .portfolio-banner {
