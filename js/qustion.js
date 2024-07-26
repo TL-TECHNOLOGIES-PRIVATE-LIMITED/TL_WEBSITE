@@ -3,7 +3,7 @@
 const questions = [
     {
         question: "What services does TL TECHNOLOGIES offer?",
-        answer: "TL TECHNOLOGIES offers a comprehensive range of digital services including Digital Marketing, Domain & Hosting, Branding, Website Development, Ecommerce Solutions, Video Editing, Posters/Flex Printing, Custom Software Development, Mobile App Development, Cybersecurity Services, Data Analytics, Cloud Solutions, System Integration, IT Support, SEO/SEM, and IT Consulting. Feel free to ask for more details on any specific service!"
+        answer: "TL TECHNOLOGIES offers a comprehensive range of digital services including Digital Marketing, Domain & Hosting, Branding, Website Development, E-commerce Solutions, Video Editing, Posters/Flex Printing, Custom Software Development, Mobile App Development, Cybersecurity Services, Data Analytics, Cloud Solutions, System Integration, IT Support, SEO/SEM, and IT Consulting. Feel free to ask for more details on any specific service!"
     },
     {
         question: "What products does TL TECHNOLOGIES offer?",
@@ -22,8 +22,8 @@ const questions = [
         answer: "Our Website Development service includes designing and building responsive, user-friendly websites tailored to your business needs. We handle everything from front-end design to back-end development, ensuring a seamless user experience."
     },
     {
-        question: "How can your Ecommerce Solutions benefit my business?",
-        answer: "Our Ecommerce Solutions include building robust online stores, integrating secure payment gateways, and optimizing the shopping experience to increase sales and customer satisfaction. We aim to provide a smooth and effective ecommerce platform for your business."
+        question: "How can your E-commerce Solutions benefit my business?",
+        answer: "Our E-commerce Solutions include building robust online stores, integrating secure payment gateways, and optimizing the shopping experience to increase sales and customer satisfaction. We aim to provide a smooth and effective e-commerce platform for your business."
     },
     {
         question: "What types of Mobile App Development do you offer?",
@@ -82,9 +82,9 @@ const keywords = [
     "contact",
     "Digital Marketing",
     "Website Development",
-    "Ecommerce",
+    "E-commerce",
     "Mobile App Development",
-    "Cybersecurity",
+    "Cybersecurity",    
     "IT Support",
     "Custom Software",
     "Cloud Solutions",
@@ -95,5 +95,5 @@ const keywords = [
     "Branding",
     "Video Editing",
     "SEO",
-    "SEM"
+    
 ];
