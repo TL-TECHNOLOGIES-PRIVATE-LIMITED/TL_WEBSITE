@@ -802,7 +802,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: none;
-	font-family: "Montserrat", sans-serif !important; 
+	font-family: "marrywether",  !important; 
+
 }
 
 img {
@@ -4004,7 +4005,7 @@ em.state-invalid {
 	font-size: 1.143rem;
 	color: #fff;
 	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 900;
 }
 
 .visual-text-bigger {
@@ -5934,8 +5935,8 @@ pre {
 .info-list .text {
 	margin-left: 2rem;
 	display: block;
-	color: #55565b;
-	font-weight: 700;
+	color: #000;
+	font-weight: 900;
 }
 
 .info-list li {
@@ -6360,7 +6361,7 @@ pre {
 }
 
 .count-block .text {
-	font-size: .875rem;
+	font-size: 1rem;
 	line-height: 1.2;
 	color: #fff;
 }
@@ -9491,9 +9492,9 @@ a.full-width-icon:hover .social-text {
 
 .slider-text {
 	color: #575757;
-	font-size: .875rem;
+	font-size: 1rem;
 	line-height: 1.875rem;
-	font-weight: 500;
+	font-weight: 900;
 	margin-bottom: 1.875rem;
 }
 
@@ -10016,12 +10017,12 @@ a.full-width-icon:hover .social-text {
 }
 
 .footer-nav ul li a {
-	color: #7d7d7d;
+	color: #ffffff;
 	font-weight: 400;
 }
 
 .footer-nav ul li a:hover {
-	color: #fff;
+	color: #7d7d77;
 }
 
 .footer-nav.inline-nav li {
