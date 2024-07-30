@@ -805,6 +805,17 @@ body {
 	font-family: "Verdana",sans-serif  !important; 
 
 }
+.rounded-text-box {
+	border: 5px solid #ff0000; /* Border color and width */
+	border-radius: 15px; /* Adjust the radius to your preference */
+	padding: 5px; /* Padding inside the text box */
+	width: 660px; /* Width of the text box */
+	text-decoration: none;
+	background-color: white;
+	margin-bottom: 0%;
+	height: 80px;
+	color: red !important;
+}
 
 img {
 	max-width: 100%;
