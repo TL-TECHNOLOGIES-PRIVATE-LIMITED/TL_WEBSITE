@@ -123,6 +123,8 @@
         ]
       }
     </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
 
     <!-- Font Icons -->
     <link media="all" rel="stylesheet" href="css/fonts/icomoon/icomoon.css" />
@@ -300,7 +302,7 @@
       .modal {
         display: none;
         position: fixed;
-        z-index: 2000;
+        z-index: 2500;
 
         width: 100%;
         height: 100%;
@@ -308,6 +310,7 @@
         background-color: rgba(0, 0, 0, 0.4);
         justify-content: center;
         align-items: center;
+        flex-direction: row;
       }
 
       #email:focus {
@@ -317,31 +320,37 @@
   color: black;
 } */
       .emailmodal-content {
-        border-radius: 5px;
+        border-radius: 20px;
         background-color: #fefefe;
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
         height: fit-content;
         max-width: fit-content;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         animation-name: modalopen;
         animation-duration: 0.8s;
         font-family: sans-serif;
         backdrop-filter: initial;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         gap: 5px;
         position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
       }
       #subscriptionForm {
-        width: 100%;
+        width: auto;
         display: flex;
+        height: auto;
+        transition: all;
+        transition-duration: 1.5;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        line-height: 5px;
-        background-color: #8f7d7d00;
+        /* gap: 10px; */
+        /* line-height: 5px; */
+        background-color: #48d6ef51;
+        padding: 8px;
+        border-radius: 30px;
       }
 
       @keyframes modalopen {
@@ -358,10 +367,9 @@
         font-size: 20px;
         font-weight: bold;
         position: absolute;
-        top: -10px;
-        right: -10px;
-        border: solid 1px black;
-        background-color: black;
+        top: 10px;
+        right: 10px;
+        background-color: rgb(225, 72, 100);
         border-radius: 50%;
         width: 28px;
         height: 28px;
@@ -404,7 +412,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
+        border-radius: 30px;
         font-size: 10px;
         cursor: pointer;
         /* border: solid 1px red; */
@@ -412,13 +420,18 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
       #email {
-        background-color: #ef4a4851;
+        /* display: flex; */
+        transition-property: all;
+        transition-duration: 1s;
+
+
         height: 30px;
         width: 100%;
         max-width: 300px;
         border: none;
-        border-radius: 10px;
-        min-width: 200px;
+        border-radius: 30px;
+        background:transparent;
+        min-width: fit-content;
         padding-inline-start: 10px;
         /* font-weight: bolder; */
       }
@@ -459,6 +472,8 @@
   // modified date : July/24/2024 || modified by : Abid NK  || module : Modified Product Page||
   // modified date : July/24/2024 || modified by : Abid NK  || module : Updated Service Page||
   // modified date : July/24/2024 || modified by : Abid NK  || module : Updated Product Details||
+  // modified date : July/26/2024 || modified by : Abid NK  || module : Updated Footer Details||
+  // modified date : July/28/2024 || modified by : Abid NK  || module : Updated Product Details||
 
   // Technical summary(Pre-setups) created date/by :  Abid NK ||
   // Domain : godaddy || https://tltechnologies.net/  ||
@@ -619,29 +634,49 @@
         <!--/header of the page -->
         <main>
           <div id="emailModal" class="modal">
-            <div class="emailmodal-content">
+
+            <div class="emailmodal-content" style="flex-wrap: wrap;">
+
               <span class="closeBtn">&times;</span>
-              <h4
+              <div style="height: 100%;display: none;" id="verified">
+                <iframe  style="border: none;height:250px;width: auto;" src="https://lottie.host/embed/6b92bb33-0f21-4d3f-82bc-f91f58436330/qZB5qxI5JF.json"></iframe>
+                <!-- <img src="./img/emailmodalbg.jpg" style="lt=""> -->
+              </div>
+              <div style="height: 100%;" id="animation">
+                <!-- <img src="./img/emailmodalbg.jpg" style="lt=""> -->
+                <iframe  style="border: none;height:250px;width: auto;" src="https://lottie.host/embed/c5f37935-b593-44fb-a681-fb7bdf439e7c/FK2INb7Zj3.json"></iframe>    
+              </div>
+              <div style="display: flex;flex-direction: column;
+              align-items: start;justify-content: space-between;">
+
+                       <h4
                 style="
                   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
                     'Helvetica Neue', sans-serif;
-                  font-weight: bolder;color: rgb(0, 0, 0);font-weight: 700;font-size: xx-large;
+                  font-weight: bolder;color: rgb(0, 0, 0);font-weight: 700;font-size: xx-large
+                  ;color: #1970d2;
+                  font-size: 50px;
+                  width: fit-content;
                 "
               >
-                Subscribe to our Newsletter
+                Subscribe to our
+                <br>
+                Newsletter
               </h4>
               <p
                 style="
                   font-size: 14px;
                   color: #03020298;
                   width: 100%;
+                  text-align: start;
                   line-height: 1.5;
                   max-width: 350px;
+                  font-weight: 500;
                 "
               >
                 Stay connected and be the first to know about our latest
-                news. Sign up here!
+                news. <span style="color: #1970d2;">Sign up here!</span>
               </p>
               <div    style="
               font-size: 12px;
@@ -650,10 +685,10 @@
               width: 100%;
               /* line-height: 1.5; */
               max-width: 100%;
-              height: 20px;
+              height: 18px;
               ">
-              <p id="error-message" style="color: red;"></p>
-              <p id="success-message" style="color: green;"></p>
+              <p id="error-message" style="padding-left:20px;color: red;width: fit-content;"></p>
+              <p id="success-message" style="padding-left:20px;color: green; width: fit-content;"></p>
             </div>
 
               <form id="subscriptionForm">
@@ -662,11 +697,12 @@
                   id="email"
                   name="email"
                   required
-                  placeholder="email"
+                  placeholder="Email eg:xxx@gmail.com"
                 />
                 <button type="submit" class="submit">Subscribe</button>
               
               </form>
+            </div> 
             </div>
           </div>
           <div class="cookie-consent" id="cookieConsent">
@@ -679,7 +715,7 @@
               We use cookies to enhance your experience on our website. By
               continuing to use our site, you agree to our use of cookies.
             </p>
-            <div style="display: flex; gap: 15px;">
+            <div style="display: flex; gap: 15px">
               <button onclick="acceptCookies()">Accept</button>
               <button class="decline" onclick="declineCookies()">
                 Decline
@@ -1161,13 +1197,9 @@
                     <img src="img/800x533 -TL-1.png" alt="images description" />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="tltechnologies.net">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1187,13 +1219,9 @@
                     />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="https://www.instagram.com/bizface2018/">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1208,13 +1236,9 @@
                     <img src="img/800x533-6.png" alt="images description" />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="https://www.frosty-foods.com/">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1231,13 +1255,9 @@
                     <img src="img/800x533-5.png" alt="images description" />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="https://www.instagram.com/bizface2018/">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1254,13 +1274,9 @@
                     <img src="img/800x533-4.png" alt="images description" />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="https://www.frosty-foods.com/">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1275,13 +1291,9 @@
                     <img src="img/800x533-Nexge.png" alt="images description" />
                     <figcaption>
                       <div class="link-box">
-                        <a href="#">
+                         
+                        <a href="https://www.nexge.in/">
                           <span class="icon-heart"
-                            ><span class="sr-only">&amp;</span></span
-                          >
-                        </a>
-                        <a href="#">
-                          <span class="icon-link"
                             ><span class="sr-only">&amp;</span></span
                           >
                         </a>
@@ -1305,7 +1317,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="bottom-space-small-only">
-                      <p style="font-weight: 700">
+                      <p style="font-weight: 700 ;">
                         Founded in 2020, TL Technologies has rapidly grown from
                         a small startup into a preeminent provider of
                         cutting-edge technology solutions. Our journey began
@@ -1313,7 +1325,7 @@
                         of technology to address and solve real-world
                         challenges.
                       </p>
-                      <p>
+                      <p style="color: #000;">
                         From our modest beginnings, we focused on identifying
                         key issues across various industries and leveraging
                         innovative technological approaches to tackle these
@@ -1332,7 +1344,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="bottom-s-space">
-                      <p>
+                      <p style="color: #000;">
                         As we evolved, so did our scope and capabilities. We
                         expanded our services to encompass a wide range of
                         technology-driven solutions, including software
@@ -1468,46 +1480,46 @@
                     <div class="slide-item">
                       <figure class="team-box caption-fade-up">
                         <div class="img-block rev-gray-scale">
-                          <img src="img/team-01.jpg" alt="images description" />
+                          <img src="img/no-image.png" alt="images description" />
                         </div>
-                        <figcaption class="text-right">
-                          <strong class="content-title mb-0">JESSICA </strong>
-                          <span class="sub">UI/UX GURU</span>
+                        <figcaption class="text-right" style="background-color: #fd0f0bb2">
+                          <strong class="content-title mb-0">ABHILASH THOMAS</strong>
+                          <span class="sub">CTO</span>
                         </figcaption>
                       </figure>
                     </div>
                     <div class="slide-item">
                       <figure class="team-box caption-fade-up">
                         <div class="img-block rev-gray-scale">
-                          <img src="img/team-03.jpg" alt="images description" />
+                          <img src="img/no-image.png" alt="images description" />
                         </div>
-                        <figcaption class="text-right">
-                          <strong class="content-title mb-0">JAMES </strong>
-                          <span class="sub">UI/UX GURU</span>
+                        <figcaption class="text-right" style="background-color: #fd0f0bb2">
+                          <strong class="content-title mb-0">DISHAR PK</strong>
+                          <span class="sub">CCO</span>
                         </figcaption>
                       </figure>
                     </div>
                     <div class="slide-item">
                       <figure class="team-box caption-fade-up">
                         <div class="img-block rev-gray-scale">
-                          <img src="img/team-02.jpg" alt="images description" />
+                          <img src="img/no-image.png" alt="images description" />
                         </div>
-                        <figcaption class="text-right">
+                        <figcaption class="text-right" style="background-color: #fd0f0bb2">
                           <strong class="content-title mb-0"
-                            >STEVE MANNING</strong
+                            >COMING SOON</strong
                           >
-                          <span class="sub">UI/UX GURU</span>
+                          <span class="sub"></span>
                         </figcaption>
                       </figure>
                     </div>
                     <div class="slide-item">
                       <figure class="team-box caption-fade-up">
                         <div class="img-block rev-gray-scale">
-                          <img src="img/team-01.jpg" alt="images description" />
+                          <img src="img/no-image.png" alt="images description" />
                         </div>
-                        <figcaption class="text-right">
-                          <strong class="content-title mb-0">JESSICA </strong>
-                          <span class="sub">UI/UX GURU</span>
+                        <figcaption class="text-right" style="background-color: #fd0f0bb2">
+                          <strong class="content-title mb-0">COMING SOON</strong>
+                          <span class="sub"></span>
                         </figcaption>
                       </figure>
                     </div>
@@ -1571,7 +1583,10 @@
             </section>
             <section class="content-block bg-gray-light">
               <div class="container">
-                <div class="block-heading bottom-space text-center" style="margin-top: -50px;">
+                <div
+                  class="block-heading bottom-space text-center"
+                  style="margin-top: -50px"
+                >
                   <h2 class="block-main-heading">TESTIMONIALS</h2>
                   <span class="block-sub-heading"
                     >Don't just take our word for it. Hear what our clients have
@@ -1666,7 +1681,10 @@
               </div>
             </section>
             <aside class="content-block">
-              <div class="bottom-space text-center text-uppercase" style="margin-top: -100px;">
+              <div
+                class="bottom-space text-center text-uppercase"
+                style="margin-top: -100px"
+              >
                 <h3>
                   Our
                   <span style="color: rgb(255, 66, 66)">Valued </span>Clients
@@ -1734,7 +1752,7 @@
                       </a>
                     </div>
                     <div class="slide-item">
-                      <a href="">
+                      <a href="https://www.instagram.com/bizface2018/">
                         <img
                           src="img/web-bizfacelogo-124-80.png"
                           alt="images description"
@@ -1782,8 +1800,8 @@
                               </fieldset>
                           </form>
                       </div> -->
-                <div class="my-4" >
-                  <p style="color: white;">
+                <div class="my-4">
+                  <p style="color: white">
                     Imagine, Create, and Innovate. That's what we do at TL
                     Technologies. We give you solutions that can help improve
                     your business and make your journey to the top even easier.
@@ -1831,6 +1849,7 @@
                 <div class="footer-nav">
                   <ul>
                     <li><a href="tel:+919061432814">+91 9061432814</a></li>
+                    <li><a href="tel:+919778280507">+91 9778280507</a></li>
                     <li>
                       <a href="mailto:sangig@tltechnologies.net"
                         >sangig@tltechnologies.net</a
@@ -1852,50 +1871,70 @@
                   class="col-md-6"
                   style="display: flex; justify-content: center"
                 >
-                <ul class="social-network with-text">
-                  <li>
-                    <a href="https://www.facebook.com/TLTechnologiesNET/"
-                      ><span style="color: #1877f2;" class="icon-facebook"></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/tl_technologies?lang=en"
-                      ><span style="color: #1daff2;" class="icon-twitter"></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/tltechnologiespvtltd/"
-                      ><span style="color: rgb(255, 255, 255);" class="fa-brands fa-instagram"></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://in.linkedin.com/company/tltechnologiespvtltd"
-                      ><span style="color: rgb(0, 119, 255);" class="fa-brands fa-linkedin"></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.youtube.com/@tltechnologiespvtltd-sangi"
-                      ><span style="color: #ff4747;" class="fa-brands fa-youtube"></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://in.pinterest.com/tltechnologiespvtltd/"
-                      ><span style="color: #ff4747;" class="fa-brands fa-pinterest"></span
-                    ></a>
-                  </li>
-                </ul>
+                  <ul class="social-network with-text">
+                    <li>
+                      <a href="https://www.facebook.com/TLTechnologiesNET/"
+                        ><span
+                          style="color: #1877f2"
+                          class="icon-facebook"
+                        ></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/tl_technologies?lang=en"
+                        ><span
+                          style="color: #1daff2"
+                          class="icon-twitter"
+                        ></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/tltechnologiespvtltd/"
+                        ><span
+                          style="color: rgb(255, 255, 255)"
+                          class="fa-brands fa-instagram"
+                        ></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://in.linkedin.com/company/tltechnologiespvtltd"
+                        ><span
+                          style="color: rgb(0, 119, 255)"
+                          class="fa-brands fa-linkedin"
+                        ></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@tltechnologiespvtltd-sangi"
+                        ><span
+                          style="color: #ff4747"
+                          class="fa-brands fa-youtube"
+                        ></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://in.pinterest.com/tltechnologiespvtltd/"
+                        ><span
+                          style="color: #ff4747"
+                          class="fa-brands fa-pinterest"
+                        ></span
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="col-md-6 pb-3">
-                  <p style="color: white;">
+                  <p style="color: white">
                     <a
-                      target="_blank" style="color: white;"
+                      target="_blank"
+                      style="color: white"
                       href="https://www.google.com/maps/dir//Vilame+1st+Floor,+Laham+Commercial+Complex,+Near+Asset+Orchestra+,+Vetturoad+Traffic+Point,+Pallinada,+Kazhakkoottam,+Kerala+695582/@8.5799532,76.7808849,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3b05bfb13fa37fc1:0xf89d4bd32e84246f!2m2!1d76.8632868!2d8.5799619?entry=ttu"
                       ><span class="fa-solid fa-location-dot"></span> TL
                       TECHNOLOGIES <br />
-                      Vilame 1st Floor, Laham Commercial Complex,<br /> DOTSPACE
-                      BUSINESS CENTER, Near Al Uthuman School Vetturoad,<br />
+                      Vilame 1st Floor, Laham Commercial Complex,<br />
+                      DOTSPACE BUSINESS CENTER, Near Al Uthuman School
+                      Vetturoad,<br />
                       Near Asset Orchestra Rd, Kazhakkoottam,<br />Trivandrum,
                       Kerala, 695585</a
                     >
@@ -1906,7 +1945,7 @@
           </div>
           <div class="footer-bottom text-center pt-0">
             <div class="divider-border mt-0 mb-4"></div>
-            <p>Copyright 2024 - TL TECHNOLOGIES</p>
+            <p style="color: white">Copyright 2024 - <span style="color: red;">TL TECHNOLOGIES</span>  </p>
           </div>
         </div>
       </footer>
@@ -1960,21 +1999,17 @@
       function areCookiesAccepted() {
         return document.cookie.indexOf("cookieConsent=true") !== -1;
         document.getElementById("cookieConsent").style.display = "none";
-
       }
 
       // Example usage of the areCookiesAccepted function
       if (areCookiesAccepted()) {
         setTimeout(() => {
-          
-      if (isSubscribed) {
-        console.log(isSubscribed)
-        emailmodal.style.display = "none";
-
-      }else{
-        emailmodal.style.display = "flex";
-
-      }
+          if (isSubscribed) {
+            console.log(isSubscribed);
+            emailmodal.style.display = "none";
+          } else {
+            emailmodal.style.display = "flex";
+          }
         }, 5000);
         console.log("Cookies are accepted");
       }
@@ -1995,7 +2030,8 @@
       function declineCookies() {
         document.getElementById("cookieConsent").style.display = "none";
         // Set a cookie to remember user's choice
-        document.cookie ="cookieConsent=false; path=/; max-age=" + 60 * 60 * 24 * 365;
+        document.cookie =
+          "cookieConsent=false; path=/; max-age=" + 60 * 60 * 24 * 365;
         if (!isSubscribed) {
           // Open modal if user is not subscribed
           setTimeout(() => {
@@ -2014,47 +2050,66 @@
         }
       };
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwz1Wc8ysZ_ZLP43iISG0LH1JK1IXx3SfhXJTvdPiFaF49X1dwd6j9CjugFF2Dw9w/exec'
-  const form = document.forms['subscriptionForm']
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwz1Wc8ysZ_ZLP43iISG0LH1JK1IXx3SfhXJTvdPiFaF49X1dwd6j9CjugFF2Dw9w/exec";
+      const form = document.forms["subscriptionForm"];
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
+      form.addEventListener('submit', e => {
+    e.preventDefault();
+
     if (!validateEmail()) {
         return; // Prevent form submission if email is invalid
-      }
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .then(emailmodal.style.display = "none"      ).then(localStorage.setItem("isSubscribed",true))
-      .catch(error => console.error('Error!', error.message))
-  })
-  const emailInput = form.elements['email'];
-  const errorMessage = document.getElementById('error-message');
-  const successMessage = document.getElementById('success-message');
-
-  function validateEmail() {
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      
-      // Clear previous messages
-      errorMessage.textContent = '';
-      successMessage.textContent = '';
-      
-      if (!emailPattern.test(emailInput.value)) {
-        successMessage.style.display="none"
-        errorMessage.style.display="flex"
-        errorMessage.textContent = 'Please enter a valid email address';
-        return false;
-      } else {
-        errorMessage.style.display="none"
-        successMessage.style.display="flex"
-        successMessage.textContent = 'Email is valid!';
-        return true;
-      }
     }
+    var emailmodal = document.getElementById("emailModal");
+    var verified= document.getElementById("verified")
+     animation.style.display="none"
+            verified.style.display="flex"
 
-    // Add input event listener to email input
-    emailInput.addEventListener('input', validateEmail);
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        
+          var animation= document.getElementById("animation")
+      var closeBtn = document.getElementsByClassName("closeBtn")[0];
+      var input=document.getElementById("email");
+            console.log('Success!', response);
+            localStorage.setItem("isSubscribed", true);
+           
+            // input.style.display = "none";
+            setTimeout(() => {
+              console.log(input)
+              emailmodal.style.display = "none"; // Assuming 'emailmodal' is defined
+            }, 4000);
+        })
+        .catch(error => console.error('Error!', error.message));
+});
 
-</script>
+      const emailInput = form.elements["email"];
+      const errorMessage = document.getElementById("error-message");
+      const successMessage = document.getElementById("success-message");
+
+      function validateEmail() {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Clear previous messages
+        errorMessage.textContent = "";
+        successMessage.textContent = "";
+
+        if (!emailPattern.test(emailInput.value)) {
+          successMessage.style.display = "none";
+          errorMessage.style.display = "flex";
+          errorMessage.textContent = "Please enter a valid email address";
+          return false;
+        } else {
+          errorMessage.style.display = "none";
+          successMessage.style.display = "flex";
+          successMessage.textContent = "Email is valid!";
+          return true;
+        }
+      }
+
+      // Add input event listener to email input
+      emailInput.addEventListener("input", validateEmail);
+    </script>
     <!-- REVOLUTION JS FILES -->
     <script
       type="text/javascript"
